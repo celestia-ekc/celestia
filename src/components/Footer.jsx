@@ -13,7 +13,7 @@ const userful = [
 ]
 const Footer = () => {
     return (
-        <footer>
+        <>
 
             {/* logo */}
             <div className="hidden md:block"> 
@@ -59,7 +59,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </>
     )
 }
 

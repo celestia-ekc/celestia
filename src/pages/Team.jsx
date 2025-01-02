@@ -34,9 +34,9 @@ const Team = () => {
                   <h2 className="text-white text-lg font-semibold">{member.name}</h2>
                   <p className="text-gray-400">{member.position}</p>
                   <div className="icons flex justify-around items-center mt-2">
-                    <GitHub width={18} />
-                    <Linkedin width={18} />
-                    <Instagram width={18} />
+                    <GitHub width={18} className="cursor-pointer" />
+                    <Linkedin width={18}  className="cursor-pointer"/>
+                    <Instagram width={18}  className="cursor-pointer" />
                   </div>
                 </div>
               ))}
@@ -60,9 +60,9 @@ const Team = () => {
                   </h2>
                   <p className="text-gray-400">{member.position}</p>
                   <div className="icons flex justify-around items-center mt-2">
-                    <GitHub width={18} />
-                    <Linkedin width={18} />
-                    <Instagram width={18} />
+                    <GitHub width={18}  className="cursor-pointer" />
+                    <Linkedin width={18}  className="cursor-pointer" />
+                    <Instagram width={18}  className="cursor-pointer" />
                   </div>
                 </div>
               ))}

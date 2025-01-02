@@ -1,3 +1,4 @@
+import { Rings } from "react-loader-spinner";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { useEffect, useState } from "react";
@@ -41,7 +42,7 @@ const Gallery = () => {
               </div>
             ) : loading ? (
               <div className="flex justify-center items-center min-h-72">
-                <p className="font-bold text-xl md:text-2xl" style={{letterSpacing: 4}}>Loading.....</p>
+                <Rings color="#F15E22"/>
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-9 px-4 md:px-10 mb-10">
