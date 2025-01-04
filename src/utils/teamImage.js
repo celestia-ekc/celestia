@@ -29,6 +29,8 @@ import haneenag from '../assets/team/haneenag.jpg';
 import irfana from '../assets/team/irfana.jpg';
 import abdulhaadi from '../assets/team/abdulhaadi.jpg';
 import naveena from '../assets/team/naveena.jpg';
+import msinank from "../assets/team/msinank.jpg";
+import nihal from "../assets/team/nihal.jpg"
 
 
 
@@ -64,6 +66,8 @@ const images = {
   "irfana.jpg": irfana,
   "abdulhaadi.jpg": abdulhaadi,
   "naveena.jpg": naveena,
+  "msinank.jpg" : msinank,
+  "nihal.jpg": nihal
 };
 
 export default images;
