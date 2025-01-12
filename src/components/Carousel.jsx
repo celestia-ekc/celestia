@@ -38,8 +38,8 @@ const Carousel = () => {
           Recent <span className="text-[#F15E22]">Events</span>
         </h1>
       </div>
-      <div className="events-body mt-12 relative w-full">
-        <div className="absolute inset-0 flex z-10 space-x-4 justify-between md:justify-around">
+      <div className="events-body mt-12 relative w-full flex justify-center items-center z-0">
+        <div className="absolute inset-0 flex z-30 space-x-4 justify-between md:justify-around">
           <button onClick={handlePrevClick}>
             <ArrowLeft size={30} className="bg-black p-1 rounded-full shadow-[0_0px_10px_rgba(255,255,255,0.62)]"/>
           </button>
@@ -88,9 +88,11 @@ const Carousel = () => {
           {events.map((items, index) => (
             <SwiperSlide key={index}>
               <img  src={items.src} alt={`slide_image_${index}`} />
-              <div className="description bg-gradient-to-r from-[#0E1320] to-[#425B72]  opacity-80 rounded-lg absolute top-60 md:top-44 lg:top-[350px] flex-col justify-center items-center space-y-3 p-3  w-full text-center">
-                <p className="font-bold text-sm md:text-[15px] lg:text-lg">{items.description}</p>
-                <p className="from-transparent spaci">{items.date}</p>
+              <div className=" relative -top-20">
+                  <div className="description bg-gradient-to-r from-[#0E1320] to-[#425B72]  opacity-80 rounded-lg flex flex-col justify-center items-center px-5 py-2">
+                  <p className="font-bold text-sm md:text-[15px] lg:text-lg">{items.description}</p>
+                  <p className="from-transparent spaci">{items.date}</p>
+                  </div>
               </div>
             </SwiperSlide>
           ))}
