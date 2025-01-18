@@ -95,11 +95,11 @@ const RecentEvents = () => {
                   spaceBetween: 40,
                 },
               }}
-              className="swiper_container rounded-lg"
+              className="swiper_container rounded-md"
             >
               {events.map((items, index) => (
                 <SwiperSlide key={index}>
-                  <div className="relative h-full w-full">
+                  <div className="relative h-full w-fit">
                     <div className="aspect-square overflow-hidden rounded-[1rem] md:rounded-[2rem]">
                       <img 
                         src={items.src} 
@@ -107,13 +107,13 @@ const RecentEvents = () => {
                         style={{ 
                           width: '100%',
                           height: '100%',
-                          objectFit: 'cover',
+                          objectFit: "fill",
                         }}
                         className="rounded-[1rem] md:rounded-[2rem]"
                       />
                     </div>
                     <div className="absolute bottom-0 inset-x-0 rounded-b-[1rem] md:rounded-b-[2rem] overflow-hidden z-20">
-                      <div className="description bg-gradient-to-r from-[#0E1320] to-[#425B72] opacity-80 flex flex-col justify-between px-3 md:px-5 py-2">
+                      <div className="description w-full bg-gradient-to-r from-[#0E1320] to-[#425B72] opacity-80 flex flex-col justify-between px-3 md:px-5 py-2">
                         <div className="flex justify-between items-center">
                           <div>
                             <p className="font-bold text-xs md:text-sm lg:text-lg">{items.description}</p>
