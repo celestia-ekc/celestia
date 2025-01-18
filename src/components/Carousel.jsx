@@ -32,7 +32,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="events-container w-full">
+    <div className="carousel">
       <div className="events-head text-center">
         <h1 className="font-bold text-center text-4xl md:text-5xl">
           Recent <span className="text-[#F15E22]">Events</span>

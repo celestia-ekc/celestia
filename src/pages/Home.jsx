@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar.jsx";
 import celestia_logo from "../assets/logocel.svg"
 import rocket_lanuch from "../assets/images/rocket.svg";
-import Carousel from "../components/Carousel.jsx";
+import RecentEvents from "../components/RecentEvents.jsx";
 import mission_content from "../assets/mission-content.svg"
 import mission_mobile from "../assets/images/mission.svg"
 import Vision from "../components/Vision.jsx";
@@ -49,7 +49,7 @@ const Home = () => {
       <div className="flex justify-center" id="events">
         <div className=" w-[80%]">
           {/* events */}
-          <Carousel />
+          <RecentEvents />
         </div>
       </div>
 
